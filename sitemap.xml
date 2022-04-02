@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
     <url>
-        <loc>https://dcutility.github.io/index.html</loc>
+        <loc>/index.html</loc>
         <lastmod>2022-04-02</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
-        <loc>https://dcutility.github.io/indexfr.html</loc>
+        <loc>/indexfr.html</loc>
         <lastmod>2022-04-02</lastmod>
         <changefreq>daily</changefreq>
     </url>
