@@ -1,0 +1,91 @@
+html *
+{
+	font-size: 14px !important;
+	font-family: Calibri, Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    scrollbar-face-color: #ECF3F9;
+    scrollbar-highlight-color: #84b0c7;
+    scrollbar-shadow-color: #84b0c7;
+    scrollbar-3dlight-color: #ECF3F9;
+    scrollbar-arrow-color: #84b0c7;
+    scrollbar-track-color: #ECF3F9;
+    scrollbar-darkshadow-color: #ECF3F9;
+}
+
+body
+{
+	background: #ECF3F9; /* gecko based browsers */
+	background: -moz-linear-gradient(top, #ECF3F9 0%, #87B6D9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ECF3F9), color-stop(100%, #87B6D9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ECF3F9 0%, #87B6D9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ECF3F9 0%, #87B6D9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ECF3F9 0%, #87B6D9 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ECF3F9 0%, #87B6D9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECF3F9', endColorstr='#87B6D9', GradientType=0); /* IE6-8 */
+    margin: 20px;
+    text-shadow: 0px 2px 3px #666;
+} 
+
+.retrait
+{
+	margin-top:-15px;
+    margin-left:10px;
+}
+    
+.BoutonStyle
+{
+    border: 0px;
+    cursor: pointer;
+}
+.BoutonState
+{
+    /* default background colour, for all layout engines that don't implement gradients */
+    background: #FFFFFF; /* gecko based browsers */
+    background: -moz-linear-gradient(top, #FFFFFF, #87B6D9); /* webkit based browsers */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#87B6D9));
+    filter: progid:DXImageTransform.Microsoft.Gradient(endColorstr= '#87B6D9' , startColorstr= '#FFFFFF' , gradientType= '0' );
+    display: block;
+    cursor: pointer;
+    border: solid 1px;
+    padding: 4px 4px 4px 4px;
+    width: 100px;
+    text-align: center;
+    color: Black;
+}
+        
+.demoHeaders
+{
+    margin-top: 2em;
+}
+#dialog_link
+{
+    padding: .4em 1em .4em 20px;
+    text-decoration: none;
+    position: relative;
+}
+#dialog_link span.ui-icon
+{
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: .2em;
+    top: 50%;
+    margin-top: -8px;
+}
+ul#icons
+{
+    margin: 0;
+    padding: 0;
+}
+ul#icons li
+{
+    margin: 2px;
+    position: relative;
+    padding: 4px 0;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+}
+ul#icons span.ui-icon
+{
+    float: left;
+    margin: 0 4px;
+}
