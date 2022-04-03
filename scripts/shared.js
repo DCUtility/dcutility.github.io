@@ -66,8 +66,8 @@ $(document).ready(function () {
 			$('#CanvasIncubatorItems').css('width', ui.value +'%');		  
 		}
     });	
-	$('#CanvasIncubator').hide();
-	//$('#CanvasIncubatorItems').css('width', '1%');
+	
+	$('#CanvasIncubatorItems').css('width', '1%');
 	
 	let _cloudTime  = 0;
 	let _cloudTimer = 0;
@@ -86,7 +86,7 @@ $(document).ready(function () {
 	
 	setTimeout(function(){
 		
-		//_cloudTimer = setInterval(cloudTimer, 5);
+		_cloudTimer = setInterval(cloudTimer, 5);
 		
 	}, 5000);
 	
