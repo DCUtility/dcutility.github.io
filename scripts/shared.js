@@ -91,7 +91,7 @@ $(document).ready(function () {
 		
 		_cloudTimer = setInterval(cloudTimer, 5);
 		
-	}, 5000);
+	}, 4000);
 	
 });
 
