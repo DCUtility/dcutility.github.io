@@ -42,16 +42,15 @@ $(document).ready(function () {
         outlineMethod: 'block',
         outlineThickness: 1,
         outlineRadius: 5,
-        shape: "sphere",
+	shape: "hcylinder",
+	lock: "x",	
+	radiusX: 2.90,
         shadow: '#AED0EA',
         shadowBlur: 1,
         shadowOffset: [1, 1],
         imageMode: 'image',
         centreImage: 'images/dcutility.png',
         tooltip: 'div',
-        maxSpeed: 0.03,
-		initial: [0.1,-0.1],
-        depth: 0.99,
     })) {
         $('#CanvasIncubator').hide();
     }
@@ -74,13 +73,13 @@ $(document).ready(function () {
 
 	function cloudTimer() {
 
-		_cloudTime += 1;
+		_cloudTime += 2;
 
 		let cloudSlider = $('#CloudSlider');
 		cloudSlider.slider("value", _cloudTime);
 		cloudSlider.slider('option', 'slide').call(cloudSlider, null, {value:_cloudTime});
 		
-		if (_cloudTime == 50)
+		if (_cloudTime == 100)
 			clearInterval(_cloudTimer);
 	}	
 	
