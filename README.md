@@ -1,5 +1,5 @@
 #  DCUtility
 
-You can browse DCUtility web site at this address : <a href="https://dcutility.github.io/">DCUtility</a>
+You can browse the web site here : <a href="https://dcutility.github.io/">DCUtility</a>
 
 Enjoy!
