@@ -20,7 +20,7 @@ $(document).ready(function () {
     $("#accordionContribution").accordion({ header: "h3", heightStyle: "content" });
 	
     $("#tabFavoritesItems").html(szFavorites);
-	$('#tabFavoritesItems').tabs();
+    $('#tabFavoritesItems').tabs();
     $("#accordionFavoritesDevOps").accordion({ header: "h3", heightStyle: "content" });
     $("#accordionFavoritesDevelopment").accordion({ header: "h3", heightStyle: "content" });
     $("#accordionFavoritesITField").accordion({ header: "h3", heightStyle: "content" });
@@ -54,6 +54,7 @@ $(document).ready(function () {
         imageMode: 'image',
         centreImage: 'images/dcutility.png',
         tooltip: 'div',
+	wheelZoom: false,
     })) {
         $('#CanvasIncubator').hide();
     }
