@@ -86,7 +86,7 @@ $(document).ready(function () {
 	
 	setTimeout(function(){
 		
-		_cloudTimer = setInterval(cloudTimer, 5);
+		//_cloudTimer = setInterval(cloudTimer, 5);
 		
 	}, 5000);
 	
