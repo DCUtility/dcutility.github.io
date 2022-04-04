@@ -42,19 +42,19 @@ $(document).ready(function () {
         outlineMethod: 'block',
         outlineThickness: 1,
         outlineRadius: 5,	
-	shape: "vcylinder",
-	lock: "y",	
-	stretchX: 6,
-	stretchY: 0.7,
-	initial: [0.05,0],
-	maxSpeed: 0.05,
+        shape: "vcylinder",
+        lock: "y",	
+        stretchX: 6,
+        stretchY: 0.7,
+        initial: [0.05,0],
+        maxSpeed: 0.05,
         shadow: '#AED0EA',
         shadowBlur: 1,
         shadowOffset: [1, 1],
         imageMode: 'image',
         centreImage: 'images/dcutility.png',
         tooltip: 'div',
-	wheelZoom: false,
+        wheelZoom: false,
     })) {
         $('#CanvasIncubator').hide();
     }
@@ -93,10 +93,56 @@ $(document).ready(function () {
 		
 	}, 4000);
 	
+	setTimeout(function(){
+		
+		if (!isEmpty(location.hash)) {
+		
+			const hashArray = location.hash.split("#").filter(function(i){return i});
+			
+			for (let i = 0; i < hashArray.length; i++) {
+			
+				if (!isEmpty(hashArray[i])) {
+				
+					SelectTab(hashArray[i]);
+					
+					if (i == hashArray.length -1)
+						SelectAccordion(decodeURI(hashArray[i]));
+				}
+			}
+		}		
+		
+	}, 1000);	
+
 });
 
 
-function ShowFocus(panelHeaderText) {
+function SelectTab(title) {
+	
+	try {
+	
+		var bFound = false;
+	
+		$.each($(".ui-tab"), function (tabIndex, tabObject) {
+			
+			if ((tabObject.innerText.toUpperCase() == title.toUpperCase())) {
+			
+				$(tabObject).parent().parent().tabs({ active: $(tabObject).index() });
+				bFound = true;
+				
+				return !bFound; //return false to break
+			}
+			
+            return !bFound;
+        });
+    }
+    catch (ex) {
+		
+        console.log(ex.message);
+    }
+}
+
+function SelectAccordion(title) {
+	
     try {
 
         var bFound = false;
@@ -105,13 +151,13 @@ function ShowFocus(panelHeaderText) {
 
             $.each($(accordionObject).find('h3'), function (panelIndex, panelObject) {
 
-                if (panelObject.innerText.indexOf(panelHeaderText) > -1) {
-
+                if (panelObject.innerText.indexOf(title) > -1) {
+                 
                     $(accordionObject).parent().parent().tabs({ active: $(accordionObject).parent().index() - 1 });
                     $(accordionObject).accordion({ active: panelIndex });
                     $(panelObject).focus();
+					bFound = true;
 
-                    bFound = true;
                     return !bFound; //return false to break
                 }
             });
@@ -119,7 +165,13 @@ function ShowFocus(panelHeaderText) {
             return !bFound;
         });
     }
-    catch (err) {
-        //alert(err.message);
+    catch (ex) {
+		
+        console.log(ex.message);
     }
+}
+
+function isEmpty(str) {
+	
+    return (!str || str.length == 0);
 }
