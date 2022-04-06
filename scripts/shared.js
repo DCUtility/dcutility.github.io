@@ -95,6 +95,8 @@ $(document).ready(function () {
 	
 	setTimeout(function(){
 		
+		document.getElementById("loader").style.display = "none";
+		
 		if (!isEmpty(location.hash)) {
 		
 			const hashArray = location.hash.split("#").filter(function(i){return i});
