@@ -1,6 +1,8 @@
 
 $(document).ready(function () {
 
+	document.getElementById("loader").style.height = window.innerHeight + "px";
+
     $('#tabsContainer').tabs();
 
     $("#tabIncubatorItems").html(szIncubator);
@@ -89,14 +91,6 @@ $(document).ready(function () {
 	
 	setTimeout(function(){
 		
-		_cloudTimer = setInterval(cloudTimer, 5);
-		
-	}, 4000);
-	
-	setTimeout(function(){
-		
-		document.getElementById("loader").style.display = "none";
-		
 		if (!isEmpty(location.hash)) {
 		
 			const hashArray = location.hash.split("#").filter(function(i){return i});
@@ -111,7 +105,15 @@ $(document).ready(function () {
 						SelectAccordion(decodeURI(hashArray[i]));
 				}
 			}
-		}		
+		}	
+		
+		setTimeout(function(){
+			
+			_cloudTimer = setInterval(cloudTimer, 5);
+			
+		}, 2000);
+		
+		document.getElementById("loader").style.display = "none";
 		
 	}, 1000);	
 
