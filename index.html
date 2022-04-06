@@ -31,13 +31,10 @@
     <script type="text/javascript" src="contents/contribution.htm"></script>
     <script type="text/javascript" src="contents/favorites.htm"></script>
     <script type="text/javascript">
-		function ready() {
-		
-			setTimeout(function(){
-			
-				document.getElementById("loader").style.display = "none";
-			}, 1000);
-		}
+	function ready() {
+
+	    document.getElementById("loader").style.display = "none";
+	}
 		
         function Mail(entity) {
             window.location.href = "mailto:dcutility@hotmail.com?subject=Information request (" + entity + ")&body=Hello DCUtility,%0D%0A%0D%0AI would like more information related to " + entity + ".%0D%0A%0D%0AThanks!";
