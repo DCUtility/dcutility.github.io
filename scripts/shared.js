@@ -1,8 +1,6 @@
 
 $(document).ready(function () {
 
-	document.getElementById("loader").style.height = window.innerHeight + "px";
-
     $('#tabsContainer').tabs();
 
     $("#tabIncubatorItems").html(szIncubator);
