@@ -21,7 +21,8 @@ body
 	background: -ms-linear-gradient(top, #ECF3F9 0%, #87B6D9 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #ECF3F9 0%, #87B6D9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ECF3F9', endColorstr='#87B6D9', GradientType=0); /* IE6-8 */
-    margin: 20px;
+    margin:0px;
+    height:100%;	
     text-shadow: 0px 2px 3px #666;
 } 
 
