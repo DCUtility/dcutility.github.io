@@ -63,15 +63,32 @@
             <li><a href="#tabContact">Contact</a></li>
         </ul>
         <div id="tabIncubator">
-			<div id="CloudSlider"></div>
-			<div id="CanvasIncubator">
-				<center>
-					<canvas height="60" id="CanvasIncubatorItems">
-					</canvas>
-				</center>
-			</div>			
-            <div id="tabIncubatorItems">
-            </div>
+			<table border="0" width="100%">
+				<tr>
+					<td align="left">
+						<img src="images/Layout.png" border="0" style="cursor: pointer;" onclick="CloudMode(this);">
+					</td>
+					<td width="98%">
+						<div id="CloudSlider"></div>
+					</td>
+				</tr>
+			<tr>
+				<td colspan="2">
+					<div id="CanvasIncubator">
+						<center>
+							<canvas id="CanvasIncubatorItems">
+							</canvas>
+						</center>
+					</div>			
+				</td>		
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="tabIncubatorItems">
+					</div>			
+				</td>		
+			</tr>
+			</table>
         </div>        
         <div id="tabContribution">
 			<iframe src="https://www.codeproject.com/members/flair/16796?show=RepDesignation,MemberTypes" height="110" width="250" scrolling="no" frameborder="no"></iframe>
