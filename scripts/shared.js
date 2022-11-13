@@ -77,7 +77,7 @@ $(document).ready(function () {
 
 	function cloudTimer() {
 
-		_cloudTime += 2;
+		_cloudTime += 5;
 
 		let cloudSlider = $('#CloudSlider');
 		cloudSlider.slider("value", _cloudTime);
