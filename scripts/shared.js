@@ -34,6 +34,7 @@ $(document).ready(function () {
     );
 
     $("#CanvasIncubatorItems").html(szCanvas);
+    document.getElementById('CanvasIncubatorItems').height = 60;
     if (!$("#CanvasIncubatorItems").tagcanvas({
         textFont: 'Calibri',
         textHeight: 8,
@@ -42,8 +43,7 @@ $(document).ready(function () {
         outlineMethod: 'block',
         outlineThickness: 1,
         outlineRadius: 5,	
-        shape: "vcylinder",
-        lock: "y",	
+        shape: "sphere",
         stretchX: 6,
         stretchY: 0.7,
         initial: [0.05,0],
@@ -109,7 +109,7 @@ $(document).ready(function () {
 			
 			_cloudTimer = setInterval(cloudTimer, 5);
 			
-		}, 2000);
+		}, 100);
 		
 		document.getElementById("loader").style.display = "none";
 		
@@ -117,6 +117,65 @@ $(document).ready(function () {
 
 });
 
+function CloudMode(e) {
+	
+	if (e.value) {
+		
+		e.style.transform = "";
+		document.getElementById('CanvasIncubatorItems').height = 60;
+		if (!$("#CanvasIncubatorItems").tagcanvas({
+			textFont: 'Calibri',
+			textHeight: 8,
+			textColour: '#6A9AB8',
+			outlineColour: '#D7EBF9',
+			outlineMethod: 'block',
+			outlineThickness: 1,
+			outlineRadius: 5,	
+			shape: "sphere",
+			stretchX: 6,
+			stretchY: 0.7,
+			initial: [0.05,0],
+			maxSpeed: 0.05,
+			shadow: '#AED0EA',
+			shadowBlur: 1,
+			shadowOffset: [1, 1],
+			imageMode: 'image',
+			centreImage: 'images/dcutility.png',
+			tooltip: 'div',
+			wheelZoom: false,
+		})) {
+			$('#CanvasIncubator').hide();
+		}
+	}
+	else {
+		
+		e.style.transform = "scale(1.1)";
+		$('#CanvasIncubatorItems').removeAttr('height');
+		if (!$("#CanvasIncubatorItems").tagcanvas({
+			textFont: 'Calibri',
+			textHeight: 8,
+			textColour: '#6A9AB8',
+			outlineColour: '#D7EBF9',
+			outlineMethod: 'block',
+			outlineThickness: 1,
+			outlineRadius: 5,
+			shape: "sphere",
+			shadow: '#AED0EA',
+			shadowBlur: 1,
+			shadowOffset: [1, 1],
+			imageMode: 'image',
+			centreImage: 'images/dcutility.png',
+			tooltip: 'div',
+			maxSpeed: 0.03,
+			initial: [0.1,-0.1],
+			depth: 0.99
+		})) {
+			$('#CanvasIncubator').hide();
+		}
+	}
+	
+	e.value = (e.value == null)?true:!e.value;
+}
 
 function SelectTab(title) {
 	
