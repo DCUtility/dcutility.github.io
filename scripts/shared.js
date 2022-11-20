@@ -114,7 +114,7 @@ $(document).ready(function () {
 		with (document) {
 			
 			getElementById("loader").style.display = "none";
-			body.style.margin = "20px";
+			body.style.margin = "10px 20px 10px 20px";
 		}		
 	}, 1000);	
 
