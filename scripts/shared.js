@@ -111,9 +111,11 @@ $(document).ready(function () {
 			
 		}, 100);
 		
-		document.getElementById("loader").style.display = "none";
-		body.style.margin = "20px";
-		
+		with (document) {
+			
+			getElementById("loader").style.display = "none";
+			body.style.margin = "20px";
+		}		
 	}, 1000);	
 
 });
