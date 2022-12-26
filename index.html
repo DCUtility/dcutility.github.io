@@ -41,9 +41,21 @@
     <script>
 	    document.getElementById("loader").style.height = window.innerHeight + "px";
     </script>
-    <audio autoplay="true" loop="true">
-        <source src="audios/background.mp3" type="audio/mpeg" >
-    </audio>
+    <audio id="background" autoplay="true" loop="true" src="audios/background.mp3" type="audio/mpeg"></audio>
+    <script type="text/javascript">
+
+        var isAudioPlayed = false;
+
+        document.body.onclick = ()=>{
+        
+            if (!isAudioPlayed) {
+            
+                isAudioPlayed = true;
+                document.getElementById("background").play();
+            }
+        }
+
+    </script>
     <table width="100%">
         <tr>
             <td>
