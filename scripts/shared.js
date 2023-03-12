@@ -70,6 +70,7 @@ $(document).ready(function () {
 		}
     });	
 	
+	$('.ui-slider-handle').height(30);
 	$('#CanvasIncubatorItems').css('width', '1%');
 	
 	let _cloudTime  = 0;
@@ -124,6 +125,7 @@ function CloudMode(e) {
 	
 	if (e.value) {
 		
+		e.title = "Cloud mode";
 		e.style.transform = "";
 		document.getElementById('CanvasIncubatorItems').height = 60;
 		if (!$("#CanvasIncubatorItems").tagcanvas({
@@ -152,6 +154,7 @@ function CloudMode(e) {
 	}
 	else {
 		
+		e.title = "Galaxy mode";
 		e.style.transform = "scale(1.1)";
 		$('#CanvasIncubatorItems').removeAttr('height');
 		if (!$("#CanvasIncubatorItems").tagcanvas({
