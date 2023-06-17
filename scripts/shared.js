@@ -5,14 +5,16 @@ $(document).ready(function () {
 
     $("#tabIncubatorItems").html(szIncubator);
     $('#tabIncubatorItems').tabs();
-    $("#accordionIncubatorTrading").accordion({ header: "h3", heightStyle: "content" });
+    $("#accordionIncubatorAI").accordion({ header: "h3", heightStyle: "content" });
+    $("#accordionIncubatorCloud").accordion({ header: "h3", heightStyle: "content" });
     $("#accordionIncubatorRemoting").accordion({ header: "h3", heightStyle: "content" });
-    $("#accordionIncubatorDebugging").accordion({ header: "h3", heightStyle: "content" });
-    $("#accordionIncubatorNetworking").accordion({ header: "h3", heightStyle: "content" });
-    $("#accordionIncubatorProgramming").accordion({ header: "h3", heightStyle: "content" });
-    $("#accordionIncubatorSecurity").accordion({ header: "h3", heightStyle: "content" });
     $("#accordionIncubatorDesktop").accordion({ header: "h3", heightStyle: "content" });
     $("#accordionIncubatorMedia").accordion({ header: "h3", heightStyle: "content" });
+    $("#accordionIncubatorProgramming").accordion({ header: "h3", heightStyle: "content" });
+    $("#accordionIncubatorDebugging").accordion({ header: "h3", heightStyle: "content" });
+    $("#accordionIncubatorNetworking").accordion({ header: "h3", heightStyle: "content" });
+    $("#accordionIncubatorSecurity").accordion({ header: "h3", heightStyle: "content" });
+    $("#accordionIncubatorTrading").accordion({ header: "h3", heightStyle: "content" });
     $("#accordionIncubatorGaming").accordion({ header: "h3", heightStyle: "content" });
     $("#accordionIncubatorOther").accordion({ header: "h3", heightStyle: "content" });
 
@@ -32,9 +34,9 @@ $(document).ready(function () {
         function () { $(this).addClass('ui-state-hover'); },
         function () { $(this).removeClass('ui-state-hover'); }
     );
-
+	
     $("#CanvasIncubatorItems").html(szCanvas);
-    document.getElementById('CanvasIncubatorItems').height = 60;
+	document.getElementById('CanvasIncubatorItems').height = 60;
     if (!$("#CanvasIncubatorItems").tagcanvas({
         textFont: 'Calibri',
         textHeight: 8,
@@ -58,7 +60,7 @@ $(document).ready(function () {
     })) {
         $('#CanvasIncubator').hide();
     }
-	
+ 	
     $("#CloudSlider").slider({
 		value:1,
 		min: 1,
