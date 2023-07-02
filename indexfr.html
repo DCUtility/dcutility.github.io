@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8"/>
     <title>DCUtility - Enthousiaste en matière de transformation numérique valorisant les initiatives innovantes.</title>
     <meta name="title" content="DCUtility - Enthousiaste en matière de transformation numérique valorisant les initiatives innovantes.">
     <meta name="description" content="Le but de ce site Web est de vous donner une brève description de moi même et de partager avec vous, certaines de mes réalisations personnelles en informatique.">
@@ -40,22 +41,22 @@
     <img id="loader" src="images/dcutilityload.png" style="width:100%;">
     <script>
 	    document.getElementById("loader").style.height = window.innerHeight + "px";
-    </script>	
+    </script>
     <audio id="background" autoplay="true" loop="true" src="audios/background.mp3" type="audio/mpeg"></audio>
     <script type="text/javascript">
 
         var isAudioPlayed = false;
 
         document.body.onclick = ()=>{
-        
+		
             if (!isAudioPlayed) {
-            
-                isAudioPlayed = true;
-                document.getElementById("background").play();
-            }
+			
+				isAudioPlayed = true;
+				document.getElementById("background").play();
+			}
         }
 
-    </script>
+    </script>		
     <table width="100%">
         <tr>
             <td>
@@ -71,39 +72,38 @@
     </table>
     <div id="tabsContainer">
         <ul>
-            <li><a href="#tabIncubator">Incubateur</a></li>
-            <li><a href="#tabContribution">Contribution</a></li>
-            <li><a href="#tabFavorites">Favoris</a></li>
-            <li><a href="#tabAbout">À propos</a></li>
-            <li><a href="#tabContact">Contact</a></li>
+            <li><a href="#tabIncubator"><img border="0" style="vertical-align: middle" src="images/Incubator.png"> Incubateur</a></li>
+            <li><a href="#tabContribution"><img border="0" style="vertical-align: middle" src="images/Contribution.png"> Contribution</a></li>
+            <li><a href="#tabFavorites"><img border="0" style="vertical-align: middle" src="images/Favorites.png"> Favoris</a></li>
+            <li><a href="#tabAbout"><img border="0" style="vertical-align: middle" src="images/About.png"> À propos</a></li>
         </ul>
         <div id="tabIncubator">
-		<table border="0" width="100%">
-			<tr height="50px">
-				<td align="left">
-					<img src="images/Layout.png" border="0" height="40px" style="cursor: pointer;" title="Mode nuage" onclick="CloudMode(this);">
-				</td>
-				<td width="98%">
-					<div id="CloudSlider"></div>
-				</td>
+			<table border="0" width="100%">
+				<tr height="50px">
+					<td align="left">
+						<img src="images/Layout.png" border="0" height="40px" style="cursor: pointer;" title="Mode nuage" onclick="CloudMode(this);">
+					</td>
+					<td width="98%">
+						<div id="CloudSlider"></div>
+					</td>
+				</tr>
+			<tr>
+				<td colspan="2">
+					<div id="CanvasIncubator">
+						<center>
+							<canvas id="CanvasIncubatorItems">
+							</canvas>
+						</center>
+					</div>			
+				</td>		
 			</tr>
-		<tr>
-			<td colspan="2">
-				<div id="CanvasIncubator">
-					<center>
-						<canvas id="CanvasIncubatorItems">
-						</canvas>
-					</center>
-				</div>			
-			</td>		
-		</tr>
-		<tr>
-			<td colspan="2">
-				<div id="tabIncubatorItems">
-				</div>			
-			</td>		
-		</tr>
-		</table>
+			<tr>
+				<td colspan="2">
+					<div id="tabIncubatorItems">
+					</div>			
+				</td>		
+			</tr>
+			</table>
         </div>
         <div id="tabContribution">
 			<iframe src="https://www.codeproject.com/members/flair/16796?show=RepDesignation,MemberTypes" height="110" width="250" scrolling="no" frameborder="no"></iframe>
@@ -178,31 +178,11 @@
             </p>
 			<br>
             <p>
-                <b>Bonne navigation et rester <a href="http://whatis.techtarget.com/definition/CALMS" target="_blank" title="View description">CALMS</a> ;-)</b>
-			</p>
-			<img border="0" src="images/bug.gif">			
-        </div>
-        <div id="tabContact">
-            <p>
                 <b>Demande d'information</b>
 			</p>
-            <p>
-                Pour toute question ou commentaire au sujet de ce site ou de son contenu, veuillez envoyer un courriel à :
-            </p>
-		<table>
-			<tr>
-				<td valign="bottom">
-					<img border="0" style="vertical-align: bottom" src="images/dcutility.ico">
-				</td>
-				<td width="2px">
-				</td>
-				<td>
-					<div class="demo">
-						<a href="mailto:dcutility@hotmail.com?subject=Demande d'information&body=Bonjour DCUtility,%0D%0A%0D%0AMerci!" target="_blank" title="Demande d'information">DCUtility</a>
-					</div>
-				</td>
-			</tr>
-		</table>			
+			<div class="demo">
+				<a href="mailto:dcutility@hotmail.com?subject=Demande d'information&body=Bonjour DCUtility,%0D%0A%0D%0AMerci!" target="_blank" title="Demande d'information"><img border="0" style="vertical-align: middle" src="images/dcutility.ico"> DCUtility</a>
+			</div>		
         </div>
     </div>
     <center>
