@@ -15,12 +15,12 @@
     <meta name="revisit-after" content="12 hour">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
     <link rel="shortcut icon" href="images/dcutility.ico" />
-	<link rel="apple-touch-icon-precomposed" href="images/dcutility.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/dcutility.png" />
     <link type="text/css" href="styles/global.css" rel="stylesheet" />
     <link type="text/css" href="styles/jquery-ui.min.css" rel="stylesheet" />
     <link type="text/css" href="styles/jquery-ui.structure.min.css" rel="stylesheet" />
     <link type="text/css" href="styles/jquery-ui.theme.min.css" rel="stylesheet" />
-	<link type="text/css" href="styles/tagcanvas.css" rel="stylesheet" />
+    <link type="text/css" href="styles/tagcanvas.css" rel="stylesheet" />
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
     <script type="text/javascript" src="scripts/jquery.ui.touch-punch.min.js"></script>
@@ -39,7 +39,7 @@
 <body>
     <img id="loader" src="images/dcutilityload.png" style="width:100%;">
     <script>
-	    document.getElementById("loader").style.height = window.innerHeight + "px";
+        document.getElementById("loader").style.height = window.innerHeight + "px";
     </script>
     <audio id="background" autoplay="true" loop="true" src="audios/background.mp3" type="audio/mpeg"></audio>
     <script type="text/javascript">
@@ -55,7 +55,7 @@
             }
         }
 
-    </script>
+    </script>     
     <table width="100%">
         <tr>
             <td>
@@ -71,50 +71,49 @@
     </table>
     <div id="tabsContainer">
         <ul>
-            <li><a href="#tabIncubator">Incubator</a></li>
-            <li><a href="#tabContribution">Contribution</a></li>
-            <li><a href="#tabFavorites">Favorites</a></li>
-            <li><a href="#tabAbout">About</a></li>
-            <li><a href="#tabContact">Contact</a></li>
+            <li><a href="#tabIncubator"><img border="0" style="vertical-align: middle" src="images/Incubator.png"> Incubator</a></li>
+            <li><a href="#tabContribution"><img border="0" style="vertical-align: middle" src="images/Contribution.png"> Contribution</a></li>
+            <li><a href="#tabFavorites"><img border="0" style="vertical-align: middle" src="images/Favorites.png"> Favorites</a></li>
+            <li><a href="#tabAbout"><img border="0" style="vertical-align: middle" src="images/About.png"> About</a></li>
         </ul>
         <div id="tabIncubator">
-			<table border="0" width="100%">
-				<tr height="50px">
-					<td align="left">
-						<img src="images/Layout.png" border="0" height="40px" style="cursor: pointer;" title="Cloud mode" onclick="CloudMode(this);">
-					</td>
-					<td width="98%">
-						<div id="CloudSlider"></div>
-					</td>
-				</tr>
-			<tr>
-				<td colspan="2">
-					<div id="CanvasIncubator">
-						<center>
-							<canvas id="CanvasIncubatorItems">
-							</canvas>
-						</center>
-					</div>			
-				</td>		
-			</tr>
-			<tr>
-				<td colspan="2">
-					<div id="tabIncubatorItems">
-					</div>			
-				</td>		
-			</tr>
-			</table>
+            <table border="0" width="100%">
+                <tr height="50px">
+                    <td align="left">
+                        <img src="images/Layout.png" border="0" height="40px" style="cursor: pointer;" title="Cloud mode" onclick="CloudMode(this);">
+                    </td>
+                    <td width="98%">
+                        <div id="CloudSlider"></div>
+                    </td>
+                </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="CanvasIncubator">
+                        <center>
+                            <canvas id="CanvasIncubatorItems">
+                            </canvas>
+                        </center>
+                    </div>            
+                </td>        
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="tabIncubatorItems">
+                    </div>            
+                </td>        
+            </tr>
+            </table>
         </div>        
         <div id="tabContribution">
-			<iframe src="https://www.codeproject.com/members/flair/16796?show=RepDesignation,MemberTypes" height="110" width="250" scrolling="no" frameborder="no"></iframe>
+            <iframe src="https://www.codeproject.com/members/flair/16796?show=RepDesignation,MemberTypes" height="110" width="250" scrolling="no" frameborder="no"></iframe>
             <div id="accordionContribution">
             </div>
         </div>
         <div id="tabFavorites">
             <div id="tabFavoritesItems">
             </div>
-        </div>		
-                <div id="tabAbout">
+        </div>        
+        <div id="tabAbout">
 			<table>
 				<tr>
 					<td>
@@ -177,35 +176,15 @@
             </p>
             <br>
             <p>
-                <b>Happy surfing and keep <a href="http://whatis.techtarget.com/definition/CALMS" target="_blank" title="View description">CALMS</a> ;-)</b>
-            </p>
-            <img border="0" src="images/bug.gif">
-        </div>
-        <div id="tabContact">
-            <p>
                 <b>Information request</b>
             </p>
-            <p>
-                For questions or comments about this site or its contents, please send an email to:
-            </p>
-		<table>
-			<tr>
-				<td valign="bottom">
-					<img border="0" style="vertical-align: bottom" src="images/dcutility.ico">
-				</td>
-				<td width="2px">
-				</td>
-				<td>
-					<div class="demo">
-						<a href="mailto:dcutility@hotmail.com?subject=Information request&body=Hi DCUtility%0D%0A%0D%0AThanks!" target="_blank" title="Information request">DCUtility</a>
-					</div>
-				</td>
-			</tr>
-		</table>
+			<div class="demo">
+				<a href="mailto:dcutility@hotmail.com?subject=Information request&body=Hi DCUtility%0D%0A%0D%0AThanks!" target="_blank" title="Information request"><img border="0" style="vertical-align: middle" src="images/dcutility.ico"> DCUtility</a>
+			</div>
         </div>
     </div>
     <center>
-		<br>
+        <br>
         <b>© 1999-<script type="text/javascript">document.write(new Date().getFullYear());</script> DCUtility. All rights reserved.</b>
     </center>
 </body>
