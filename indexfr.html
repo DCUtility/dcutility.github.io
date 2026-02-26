@@ -1,208 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <title>DCUtility</title>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "WebSite",
-      "name": "DCUtility",
-      "author": "Dany Cantin",
-      "description": "Enthousiaste en matière de transformation numérique valorisant les initiatives innovantes.",
-      "image": "https://dcutility.github.io/images/dcutility.png",
-      "url": "https://dcutility.github.io/indexfr.html"
-    }
-    </script> 	
-    <meta name="description" content="Enthousiaste en matière de transformation numérique valorisant les initiatives innovantes.">
-    <meta name="abstract" content="Bienvenue sur DCUtility !">
-    <meta name="keywords" content="DCUtility,dcutility,Dany Cantin">
-    <meta name="language" content="FR">
-    <meta name="subject" content="Site personnel avec intérêts en informatique">
-    <meta name="robots" content="All">
-    <meta name="author" content="Dany Cantin">
-    <meta name="owner" content="dcutility@hotmail.com">
-    <meta name="rating" content="DCUtility,dcutility">
-    <meta name="revisit-after" content="12 hour">
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-    <link rel="canonical" href="https://dcutility.github.io/">
-    <link rel="icon" type="image/x-icon" href="https://dcutility.github.io/favicon.ico">
-    <link rel="apple-touch-icon" href="https://dcutility.github.io/images/dcutility.png">
-    <link type="text/css" href="styles/global.css" rel="stylesheet" />
-    <link type="text/css" href="styles/jquery-ui.min.css" rel="stylesheet" />
-    <link type="text/css" href="styles/jquery-ui.structure.min.css" rel="stylesheet" />
-    <link type="text/css" href="styles/jquery-ui.theme.min.css" rel="stylesheet" />
-    <link type="text/css" href="styles/tagcanvas.css" rel="stylesheet" />
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.ui.touch-punch.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.tagcanvas.js"></script>
-    <script type="text/javascript" src="scripts/shared.js"></script>
-    <script type="text/javascript" src="contents/incubator.htm"></script>   
-    <script type="text/javascript" src="contents/canvas.htm"></script>    
-    <script type="text/javascript" src="contents/contribution.htm"></script>
-    <script type="text/javascript" src="contents/favorites.htm"></script>
-    <script type="text/javascript">
-        function Mail(entity) {
-            window.location.href = "mailto:dcutility@hotmail.com?subject=Demande d'information (" + entity + ")&body=Bonjour DCUtility,%0D%0A%0D%0AJ'aimerais obtenir plus d'information pour " + entity + ".%0D%0A%0D%0AMerci!";
-        }
-    </script>   
-</head>
-<body>
-    <img id="loader" src="images/dcutilityload.png" style="width:100%;">
-    <script>
-        document.getElementById("loader").style.height = window.innerHeight + "px";
-    </script>
-    <audio id="background" autoplay="true" loop="true" src="audios/background.mp3" type="audio/mpeg"></audio>
-    <script type="text/javascript">
+	<head>
+		<meta charset="utf-8"/>
+		<title>DCUtility</title>
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org/",
+		  "@type": "WebSite",
+		  "name": "DCUtility",
+		  "author": "Dany Cantin",
+		  "description": "Enthousiaste en matière de transformation numérique valorisant les initiatives innovantes.",
+		  "image": "https://dcutility.github.io/images/dcutility.png",
+		  "url": "https://dcutility.github.io/indexfr.html"
+		}
+		</script> 	
+		<meta name="description" content="Enthousiaste en matière de transformation numérique valorisant les initiatives innovantes.">
+		<meta name="abstract" content="Bienvenue sur DCUtility !">
+		<meta name="keywords" content="DCUtility,dcutility,Dany Cantin">
+		<meta name="language" content="FR">
+		<meta name="subject" content="Site personnel avec intérêts en informatique">
+		<meta name="robots" content="All">
+		<meta name="author" content="Dany Cantin">
+		<meta name="owner" content="dcutility@hotmail.com">
+		<meta name="rating" content="DCUtility,dcutility">
+		<meta name="revisit-after" content="12 hour">
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+		<link rel="canonical" href="https://dcutility.github.io/">
+		<link rel="icon" type="image/x-icon" href="https://dcutility.github.io/favicon.ico">
+		<link rel="apple-touch-icon" href="https://dcutility.github.io/images/dcutility.png">	
+		<link type="text/css" href="styles/global.css" rel="stylesheet" />
+	</head>
+	<body>
+		<audio id="background" autoplay="true" loop="true" src="audios/background.mp3" type="audio/mpeg"></audio>
+		<script type="text/javascript">
 
-        var isAudioPlayed = false;
+			var isAudioPlayed = false;
 
-        document.body.onclick = ()=>{
-        
-            if (!isAudioPlayed) {
-            
-                isAudioPlayed = true;
-                document.getElementById("background").play();
-            }
-        }
+			document.body.onclick = ()=>{
+			
+				if (!isAudioPlayed) {
+				
+					isAudioPlayed = true;
+					document.getElementById("background").play();
+				}
+			}
 
-    </script>        
-    <table width="100%">
-        <tr>
-            <td>
-                <img border="0" src="images/dcutility.png">
-            </td>
-            <td valign="middle" align="left" width="90%">
-                <b>Enthousiaste en matière de transformation numérique valorisant les initiatives innovantes.</b>
-            </td>
-            <td align="right" valign="middle">
-                <div class="demo">
-                    <a href="index.html" title="English"><img border="0" style="vertical-align: middle" src="images/English.png"> English</a>
-                </div>    
-            </td>
-        </tr>
-    </table>
-    <!--
-    <div id="tabsContainer" data-nosnippet>
-        <ul>
-            <li><a href="#tabIncubator"><img border="0" style="vertical-align: middle" src="images/Incubator.png"> Incubateur</a></li>
-            <li><a href="#tabContribution"><img border="0" style="vertical-align: middle" src="images/Contribution.png"> Contribution</a></li>
-            <li><a href="#tabFavorites"><img border="0" style="vertical-align: middle" src="images/Favorites.png"> Favoris</a></li>
-            <li><a href="#tabAbout"><img border="0" style="vertical-align: middle" src="images/About.png"> À propos</a></li>
-        </ul>
-        <div id="tabIncubator">
-            <table border="0" width="100%">
-                <tr height="50px">
-                    <td align="left">
-                        <img src="images/Layout.png" border="0" height="40px" style="cursor: pointer;" title="Mode nuage" onclick="CloudMode(this);">
-                    </td>
-                    <td width="98%">
-                        <div id="CloudSlider"></div>
-                    </td>
-                </tr>
-            <tr>
-                <td colspan="2">
-                    <div id="CanvasIncubator">
-                        <center>
-                            <canvas id="CanvasIncubatorItems">
-                            </canvas>
-                        </center>
-                    </div>            
-                </td>        
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div id="tabIncubatorItems">
-                    </div>            
-                </td>        
-            </tr>
-            </table>
-        </div>
-        <div id="tabContribution">
-            <a href="https://www.codeproject.com/" title="Code Project" target="_blank"><img src="images/CodeProject.png" height="110" width="250" border="0"></a>
-            <div id="accordionContribution">
-            </div>
-        </div>
-        <div id="tabFavorites">
-            <div id="tabFavoritesItems">
-            </div>
-        </div>         
-        <div id="tabAbout">
-            <table>
-                <tr>
-                    <td>
-                        <img id="loader" src="images/DCUtilityAbout.png" >
-                    </td>
-                    <td width="20px">
-                    </td>
-                    <td valign="bottom">
-                        <p>
-                            <b>Bienvenue</b>
-                        </p>
-                        <p>
-                            Le but du site Web <b>DCUtility</b> est de vous donner une brève description de moi-même et de partager avec vous certains de mes intérêts personnelles en informatique.
-                        </p>
-                        <br>
-                        <p>
-                            <b>Contexte</b>
-                        </p>
-                        <p>
-                            La toute première fois que mes doigts ont touché un clavier c'était pour déplacer une petite tortue avec le langage de programmation <a href="https://fr.wikipedia.org/wiki/Logo_(langage)" target="_blank" title="Voir la description">Logo</a>.
-                        </p>
-                        <p>
-                            Mes premières âmes en informatique ont débuté avec l'avènement du micro-ordinateur <a href="http://fr.wikipedia.org/wiki/TRS-80" target="_blank" title="Voir la description">TRS 80</a>.
-                        </p>
-                        <p>
-                            À cette époque, à peine âgé de 7 ans, j'occupais déjà la majorité de mon temps libre soit à jouer dehors ou bien à retaper d'interminables pages de codes sources en <a href="http://fr.wikipedia.org/wiki/BASIC" target="_blank" title="Voir la description">BASIC</a>.
-                        </p>
-                        <p>
-                            La majorité du temps passé à écrire ce code était suivi de longues heures de débogage dans le seul but de pouvoir jouer à des jeux.
-                        </p>    
-                        <p>    
-                            J'appelle cette période mon éveil informatique.
-                        </p>
-                    </td>
-                </tr>
-            </table>
-            <p>
-                <b>Manifeste</b>
-            </p>
-            <p>
-                J'ai débuté à partir des méthodes de développement (<a href="https://fr.wikipedia.org/wiki/D%C3%A9veloppement_rapide_d%27applications" target="_blank" title="View description">RAD</a>) et (<a href="http://fr.wikipedia.org/wiki/Extreme_programming" target="_blank" title="Voir la description">XP</a>), puis évoluer avec les approches <a href="http://fr.wikipedia.org/wiki/M%C3%A9thode_agile" target="_blank" title="Voir la description">Agile</a>-<a href="https://fr.wikipedia.org/wiki/Scrum_(d%C3%A9veloppement)" target="_blank" title="Voir la description">SCRUM</a> et <a href="https://fr.wikipedia.org/wiki/Lean_(production)" target="_blank" title="Voir la description">Lean</a>-<a href="http://fr.wikipedia.org/wiki/ITIL" target="_blank" title="Voir la description">ITIL</a>.
-            </p>
-            <p>
-                On peut facilement me considérer comme étant un évangéliste <a href="http://fr.wikipedia.org/wiki/Devops" target="_blank" title="View description">DevOps</a> des meilleures pratiques dans le domaine des technologies de l'information.
-            </p>
-            <p>
-                J'aime rassembler les gens afin qu'ils puissent collaborer et partager leurs connaissances respectives de manière utile et efficiente.
-            </p>
-            <p>
-                Mon objectif ultime, en cette ère de transformation numérique, est de valoriser les initiatives innovantes par le biais de l'approche Lean-Agile <a href="https://fr.wikipedia.org/wiki/Scaled_agile_framework" target="_blank" title="View description">(SAFe)</a>.
-            </p>
-            <br>
-            <p>
-                <b>Aphorisme préféré</b>
-            </p>
-            <p>
-                <em>« If it ain't broke, don't fix it! »</em>
-                <br>
-                <em>« Do it!, Do it right!, Do it right now! »</em>                
-            </p>
-            <br>
-            <p>
-                <b>Demande d'information</b>
-            </p>
-            <div class="demo">
-                <a href="mailto:dcutility@hotmail.com?subject=Demande d'information&body=Bonjour DCUtility,%0D%0A%0D%0AMerci!" target="_blank" title="Demande d'information"><img border="0" style="vertical-align: middle" src="images/About.png"> DCUtility</a>
-            </div>        
-        </div>
-    </div>
-    -->
-    <center>
-        <br>
-        <b>© 1999-<script type="text/javascript">document.write(new Date().getFullYear());</script> DCUtility. Tous droits reservés.</b>
-    </center>
-</body>
+		</script>  
+		<center>		
+			<table width="90%">
+				<tr>
+					<td>
+						<img border="0" src="images/dcutility.png">
+					</td>
+					<td valign="middle" align="left" width="90%">
+						<b>Enthousiaste en matière de transformation numérique valorisant les initiatives innovantes.</b>
+					</td>
+					<td align="right" valign="middle">
+						<div class="BoutonState">
+							<a href="index.html" title="English"><img border="0" style="vertical-align: middle" src="images/English.png"> English</a>
+						</div>                
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" style="vertical-align: baseline;">
+						<img id="loader" src="images/dcutilityload.png" style="width:100%;">
+						<script>
+							document.getElementById("loader").style.height = window.innerHeight - 125 + "px";
+						</script>			
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<center>
+							<br>
+							<b>  1999-<script type="text/javascript">document.write(new Date().getFullYear());</script> DCUtility. Tous droits reservés.</b>
+						</center>			
+					</td>
+				</tr>		
+			</table>
+		</center>
+	</body>	
 </html>
-
