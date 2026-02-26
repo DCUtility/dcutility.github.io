@@ -46,11 +46,12 @@ body
     filter: progid:DXImageTransform.Microsoft.Gradient(endColorstr= '#87B6D9' , startColorstr= '#FFFFFF' , gradientType= '0' );
     display: block;
     cursor: pointer;
-    border: solid 1px;
+    border: solid 0px;
     padding: 4px 4px 4px 4px;
     width: 100px;
     text-align: center;
     color: Black;
+	border-radius: 12px;
 }
         
 .demoHeaders
